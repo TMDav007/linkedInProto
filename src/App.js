@@ -1,10 +1,18 @@
 import React from 'react';
 import './App.css';
+import Header from './component/Header/Header';
 
 function App() {
   return (
     <div className="app">
-     <h1>Let's buildLinkdIn</h1>
+        <Header />
+
+      {/* App Body */}
+      <div className='app__body'>
+        
+        {/* Feed */}
+        {/* Widgets */}
+      </div>
     </div>
   );
 }
