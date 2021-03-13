@@ -7,6 +7,7 @@ import Header from './component/Header/Header';
 import Sidebar from './component/Sidebar/Sidebar';
 import Login from './component/Login/Login';
 import { auth } from './fiirebase';
+import Widgets from './component/Widget/Widgets';
 
 function App() {
   const user = useSelector(selectUser);
@@ -24,7 +25,7 @@ function App() {
       } else {
         dispatch(logout())
       }
-    })
+    });
   }, [])
   
   return (
@@ -37,7 +38,7 @@ function App() {
           <div className='app__body'>
           <Sidebar />
           <Feed />
-          {/* Widgets */}
+          <Widgets />
         </div>
         )}
     </div>
